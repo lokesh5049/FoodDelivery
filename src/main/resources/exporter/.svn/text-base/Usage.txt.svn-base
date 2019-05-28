@@ -1,0 +1,10 @@
+Add all files not in Example and ServerSide into the Ext.ux folder (typically ExtHome/examples/ux) in a folder called exporter.
+Add the files in ServerSide into an appropriate location for your application.
+
+For an example of the Exporter in use see the example folder.
+
+The key things needed are:
+ - a hidden iframe in the main html page that can be referenced when the download needs to be initiated
+ - the path to Ext.ux.exporter set correctly in the loader
+ - add Ext.ux.exporter.Exporter to the list of required files for your application
+ - a button with a handler that will extract the data from a grid / store using Exporter, save it as a temp file, and then download this temp file

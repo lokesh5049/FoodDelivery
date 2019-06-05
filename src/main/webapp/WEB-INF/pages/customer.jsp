@@ -137,7 +137,7 @@ text-transform: uppercase;
 						.ajax({
 							type : "GET",
 							dataType : "json",
-							url : "http://localhost:8085/fooddelivery/api/wallet/balance",
+							url : "http://localhost:8080/fooddelivery/api/wallet/balance",
 							success : function(data) {
 								console.log(data)
 								$("#wallet_money").text('Rs. ' + data)
@@ -236,7 +236,7 @@ text-transform: uppercase;
 											{
 												xtype : 'combobox',
 												fieldLabel : 'Food',
-												store : foodStore,
+												store : foodStore.sort("id", "ASC"),
 												editable : false,
 												valueField : 'id',
 												displayField : 'name',

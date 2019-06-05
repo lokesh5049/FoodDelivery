@@ -176,7 +176,8 @@ public class UserDaoImpl implements UserDao {
 		String parem=bo.getSortProperty(); 
 		if(bo.getSortProperty().equalsIgnoreCase("foodname")) 		
 			parem="id"; 
-	
+		if(bo.getSortProperty().equalsIgnoreCase("resturentname")) 		
+			parem="resturent_name"; 
 		return (List<OrderBo>) this.hibernateTemplate.getSessionFactory().getCurrentSession()
 				.createQuery("from OrderBo ORDER BY " +parem + " "
 						+ bo.getSortDirection().toUpperCase())

@@ -20,7 +20,7 @@
 		</developer>
 	</developers>
 	<properties>
-		<spring.version>5.0.1.RELEASE</spring.version>
+		<spring.version>5.5.7</spring.version>
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
